@@ -1,0 +1,59 @@
+<% var title = ""; %>
+<!DOCTYPE html>
+<html>
+	<style>
+		.gr-top-z-index.gr-top-zero {
+			display: none!important;
+		}
+	</style>
+	<link rel="stylesheet" href="/css/dev/contact/index.css" type="text/css" />
+	<% include ../../../globals/head %>
+	<script src="/scripts/contact/mailer.js"></script>
+	<body>
+		<% include ../../../globals/header %>
+		<div id="body">
+			<div id="contactform">
+				<div id="title">
+					Contact
+				</div>
+			    <div id="cf-message"></div>
+				<form id="cf-form" method="post">
+					<div class="formitem">
+						<div class="fi-label">
+			                Name<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+							<input id="name" name="name" class="fi-i-field" required />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Subject
+						</div>
+						<div class="fi-input">
+							<input id="subject" name="subject" class="fi-i-field" />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Email<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+							<input type="email" id="email" name="email" class="fi-i-field" required />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Message<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+						    <textarea class="fi-i-field textarea" id="message" name="message" rows=10 required ></textarea>
+						</div>
+					</div>
+					<input id="submit" type="submit" value="Submit" />
+				</form>
+			</div>
+		</div>
+		<% include ../../../globals/footer %>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+#landing {
+	background-image: url('/images/backgrounds/calibw.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+	#l-mtext {
+		padding-top: calc(50vh - 47.6px);
+	}
+		#l-mtext div {
+			color: white;
+			display: block;
+		}
+			#l-mtext div::selection {
+				background-color: black;
+			}
+				#l-mtext div br::selection {
+					background-color: black;
+				}
+		#l-mt-name {
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#l-mt-slogan {
+			font-size: 24px;
+		}
+		#l-mt-translate {
+			padding-top: 5px;
+		}
+			#l-mt-t-button {
+				background-color: transparent;
+				border: 2px solid white;
+				border-radius: 5px;
+				color: white;
+				font-size: 24px;
+				padding: 5px 15px;
+				outline: none;
+			}
+				#l-mt-t-button:hover {
+					background-color: rgba(230, 230, 230, .2);
+				}

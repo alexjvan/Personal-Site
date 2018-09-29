@@ -1,0 +1,104 @@
+#contactform {
+	background-color: #e4e4e4;
+	min-height: calc(100vh - 120px);
+	padding-top: 120px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	text-align: center;
+	width: 80vw;
+}
+	#title {
+		display: block;
+		font-size: 36px;
+		letter-spacing: 10px;
+		padding-left: 15%;
+		text-align: left;
+		text-transform: uppercase;
+	}
+    #cf-message {
+		display: block;
+		margin: 25px 0px;
+		padding-left: 10%;
+		padding-right: 10%;
+        text-align: center;
+        width: 80%;
+    }
+        #cf-message .message {
+			border-radius: 10px;
+            font-size: 20px;
+            padding: 25px 50px;
+        }
+            #cf-message .message.error {
+				background-color: rgba(255, 0, 0, .3);
+                color: red;
+            }
+            #cf-message .message.success {
+				background-color: rgba(0, 255, 0, .3);
+                color: green;
+            }
+	#cf-form {
+		display: inline-block;
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: center;
+        width: 80%;
+	}
+	    .formitem {
+			padding-top: 15px;
+			padding-bottom: 15px;
+	        width: 100%;
+	    }
+	        .fi-label {
+				float: left;
+				font-size: 20px;
+				padding-right: 100px;
+	            text-align: right;
+	            width: calc(20% - 100px);
+	        }
+	            .fi-label .req {
+	                color: red;
+	            }
+	        .fi-input {
+				float: right;
+	            width: 80%;
+	        }
+	            .fi-i-field {
+	                background-color: transparent;
+	                border: 0px;
+	                border-bottom: 2px solid #b4b4b4;
+					font-size: 20px;
+	                padding: 5px;
+	                outline: none;
+					width: 100%;
+	            }
+	                .fi-i-field:focus {
+	                    border-color: #90c2ff;
+	                    outline: none;
+	                }
+	                .fi-i-field.textarea {
+	                    background-color: transparent;
+	                    border: 2px solid #b4b4b4;
+	                    padding: 5px;
+	                    outline: none;
+	                }
+	                    .fi-i-field.textarea:focus {
+	                        border-color: #90c2ff;
+	                        outline: none;
+	                    }
+		#submit {
+			background-color: transparent;
+			border: 1px solid black;
+			border-radius: 5px;
+			font-size: 20px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			outline: none;
+			padding: 15px 25px;
+		}
+			#submit:hover {
+				background-color: #d4d4d4;
+			}
+			#submit:active {
+				background-color: #c4c4c4;
+				border-color: #90c2ff;
+			}
