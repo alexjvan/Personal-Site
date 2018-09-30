@@ -51,6 +51,10 @@ function mobileClicker() {
 			$('#mobiledropdown').addClass('disabled');
 		}
 	});
+
+	$('#mdd-c-button').click(function() {
+		$('#mobiledropdown').addClass('disabled');
+	});
 }
 
 var prevHeight = 0;
