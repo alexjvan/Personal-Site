@@ -21,9 +21,17 @@ app.get('/api/', (req, res) => {
 
 });
 
+// FUTURE PATH HANDLING
+app.get('/api/', (req, res) => {
+
+});
+
+app.get('/dev/', (req, res) => {
+
+});
+
 app.get('*', (req, res) => {
-	// 404 error
-	res.render('/404/index');
+	
 });
 
 // 404 handling

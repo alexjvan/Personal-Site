@@ -163,6 +163,20 @@ header {
 			font-size: 30px;
 			padding-top: 30px;
 		}
+		.comingsoon .more {
+			color: black;
+			vertical-align: middle;
+		}
+			.comingsoon .more a {
+				border: 1px solid black;
+				color: black;
+				display: inline-block;
+				padding: 5px 15px;
+				width: fit-content;
+			}
+				.comingsoon .more a:hover {
+					background-color: rgba(0, 0, 0, .1);
+				}
 footer {
 	background-color: #343434;
 	color: white;
