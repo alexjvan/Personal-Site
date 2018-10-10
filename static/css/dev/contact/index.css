@@ -17,25 +17,24 @@
 	}
     #cf-message {
 		display: block;
-		margin: 25px 0px;
-		padding-left: 10%;
-		padding-right: 10%;
+		margin: 100px 10%;
         text-align: center;
         width: 80%;
     }
-        #cf-message .message {
+        #cf-message.error {
+			background-color: rgba(255, 0, 0, .3);
 			border-radius: 10px;
+            color: red;
             font-size: 20px;
             padding: 25px 50px;
         }
-            #cf-message .message.error {
-				background-color: rgba(255, 0, 0, .3);
-                color: red;
-            }
-            #cf-message .message.success {
-				background-color: rgba(0, 255, 0, .3);
-                color: green;
-            }
+        #cf-message.success {
+			background-color: rgba(0, 255, 0, .3);
+			border-radius: 10px;
+            color: green;
+            font-size: 20px;
+            padding: 25px 50px;
+        }
 	#cf-form {
 		display: inline-block;
 		padding-left: 10%;
@@ -78,6 +77,7 @@
 	                .fi-i-field.textarea {
 	                    background-color: transparent;
 	                    border: 2px solid #b4b4b4;
+						font: 'Montserrat';
 	                    padding: 5px;
 	                    outline: none;
 	                }
