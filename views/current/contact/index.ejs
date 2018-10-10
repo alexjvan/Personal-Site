@@ -1,21 +1,77 @@
-<% var title = "Home"; %>
+<% var title = ""; %>
 <!DOCTYPE html>
 <html>
+	<style>
+		.gr-top-z-index.gr-top-zero {
+			display: none!important;
+		}
+	</style>
 	<link rel="stylesheet" href="/css/contact/index.css" type="text/css" />
 	<% include ../../globals/head %>
 	<body>
 		<% include ../../globals/header %>
+		<script>
+			$(document).ready(function() {
+				var urlParams = new URLSearchParams(window.location.search);
+				var error = urlParams.get('error');
+				if(error == 'true') {
+					$('#cf-message').html('ERROR! Message:'+urlParams.get('errormessage'));
+					$('#cf-message').addClass('error');
+					$('#name').attr('value', urlParams.get('name'));
+					$('#subject').attr('value', urlParams.get('subject'));
+					$('#email').attr('value', urlParams.get('email'));
+					$('#message').html(urlParams.get('message'));
+				} else if(error == 'false') {
+					$('#cf-message').html('Message sent!');
+					$('#cf-message').addClass('success');
+					$('#cf-form').css({'display':'none'});
+				}
+			});
+		</script>
 		<div id="body">
-			<div class="comingsoon">
-				<div class="title">
+			<div id="contactform">
+				<div id="title">
 					Contact
 				</div>
-				<div class="subtitle">
-					Coming soon...
-				</div>
-				<div class="more">
-					If you would like, you can send me an email at contact@alexvanmatre.com or click <a href="mailto:contact@alexvanmatre.com" download>Here</a>
-				</div>
+			    <div id="cf-message">
+
+			    </div>
+				<form id="cf-form" method="post" action="/sendmail/">
+					<input style="display: none" name="loc" id="loc" value="/contact/index" />
+					<div class="formitem">
+						<div class="fi-label">
+			                Name<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+							<input id="name" name="name" class="fi-i-field" required />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Subject
+						</div>
+						<div class="fi-input">
+							<input id="subject" name="subject" class="fi-i-field" />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Email<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+							<input type="email" id="email" name="email" class="fi-i-field" required />
+						</div>
+					</div>
+					<div class="formitem">
+						<div class="fi-label">
+			                Message<span class="req"><sup>*</sup></span>
+						</div>
+						<div class="fi-input">
+						    <textarea class="fi-i-field textarea" id="message" name="message" rows=10 required ></textarea>
+						</div>
+					</div>
+					<input id="submit" type="submit" value="Submit" />
+				</form>
 			</div>
 		</div>
 		<% include ../../globals/footer %>
