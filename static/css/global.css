@@ -233,10 +233,12 @@ footer {
 		display: flex;
 	}
 		#f-r-unflex {
+			display: grid;
 			width: 100%;
 		}
 		.f-r-link {
 			padding: 10px 15px;
+			text-align: center;
 			width: calc(100% - 30px);
 		}
 			.f-r-link:hover {
