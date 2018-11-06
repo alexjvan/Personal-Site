@@ -1,6 +1,46 @@
-#top {
+#content {
+	background-color: #e4e4e4;
+	height: calc(100% - 101px - 10px - 404px);
+	padding-top: 101px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 10px;
+	width: 90%;
+}
+	#left {
+		width: 20%;
+	}
+		#pictureframe {
+			background-color: white;
+			border: 1px solid black;
+			box-shadow: 3px 4px 10px black;
+			padding: 7.5%;
+			width: calc(85% - 5px);
+		}
+			#pf-picture {
 
-}
-#bottom {
-	
-}
+			}
+				#pf-picture img {
+					border: 1px solid #343434;
+					width: 100%;
+				}
+			#pf-name {
+				display: block;
+				padding-top: 5px;
+				text-align: center;
+			}
+				#pf-name span {
+					font-family: 'Dancing Script';
+					font-size: 1.6vw;
+				}
+	#right {
+		padding-left: 15px;
+		width: calc(35% - 30px);
+	}
+		#timeline {
+			display: grid;
+		}
+		
+		#display {
+			width: 45%;
+		}

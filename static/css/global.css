@@ -238,6 +238,7 @@ footer {
 		}
 		.f-r-link {
 			padding: 10px 15px;
+			margin-bottom: 10px;
 			text-align: center;
 			width: calc(100% - 30px);
 		}
@@ -245,19 +246,10 @@ footer {
 				background-color: #e4e4e4;
 				box-shadow: 5px 5px 10px black;
 				border-radius: 10px;
+				margin-bottom: 10px;
 			}
-				.f-r-link:hover > .f-r-l-text {
-					color: black;
-				}
 			.f-r-l-img {
 				border-radius: 0px;
 				vertical-align: middle;
 				width: 60px;
 			}
-			.f-r-l-text {
-				vertical-align: middle;
-				color: white;
-			}
-				.f-r-l-text.2 {
-					font-size: 10px;
-				}
