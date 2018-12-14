@@ -68,7 +68,7 @@
 					font-size: 20px;
 	                padding: 5px;
 	                outline: none;
-					width: 100%;
+					width: calc(100% - 10px);
 	            }
 	                .fi-i-field:focus {
 	                    border-color: #90c2ff;
