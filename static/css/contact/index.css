@@ -85,6 +85,26 @@
 	                        border-color: #90c2ff;
 	                        outline: none;
 	                    }
+			@media screen and (max-device-width: 775px) {
+				.fi-label {
+					float: left;
+					text-align: left;
+					width: 100%;
+				}
+				.fi-input {
+					width: 100%;
+				}
+			}
+			@media screen and (max-width: 775px) {
+				.fi-label {
+					float: left;
+					text-align: left;
+					width: 100%;
+				}
+				.fi-input {
+					width: 100%;
+				}
+			}
 		#submit {
 			background-color: transparent;
 			border: 1px solid black;
