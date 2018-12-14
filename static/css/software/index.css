@@ -1,0 +1,29 @@
+#repos {
+	text-align: center;
+	width: 100%;
+}
+	.repoitem {
+		display: inline-block!important;
+		padding-top: 15px;
+		text-align: left;
+		width: 500px!important;
+	}
+		.ri-clickable {
+			border: 0px!important;
+			width: calc(100% - 30px)!important;
+		}
+			.ri-c-title {
+				display: block;
+				font-weight: bold;
+				padding-top: 1px;
+			}
+			.ri-c-desc {
+				display: block;
+				padding-top: 1px;
+			}
+			.ri-c-lang {
+				color: #529EFB;
+				display: block;
+				font-style: italic;
+				padding-top: 3px;
+			}

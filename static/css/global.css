@@ -147,7 +147,7 @@ header {
 	.comingsoon {
 		background-color: #e4e4e4;
 		color: black;
-		height: 100vh;
+		min-height: 100vh;
 		text-align: center;
 		width: 100vw;
 	}
