@@ -89,6 +89,7 @@
 				.fi-label {
 					float: left;
 					text-align: left;
+					width: min-content;
 				}
 				.fi-input {
 					width: 100%;
