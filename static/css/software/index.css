@@ -1,35 +1,86 @@
-#repos {
-	padding-bottom: 10px;
+#header {
+	background-image: url('/images/backgrounds/code-bw.png');
+	background-size: cover;
+	height: 499px;
+	padding-top: 101px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+	#title {
+		background-color: rgba(255, 255, 255, 0.6);
+		font-size: 30px;
+		letter-spacing: 5px;
+		margin-top: 176.5px;
+		padding: 5px 15px;
+		text-align: center;
+		vertical-align: middle;
+	}
+.seperator {
+	border-left: calc(50vw) solid transparent;
+	border-bottom: 150px solid #343434;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 450px;
+	width: 0;
+}
+#pleft {
+	background-color: #e4e4e4;
+	border-bottom: 15px solid #343434;
+	float: left;
+	height: 50px;
+	width: 50%;
+}
+#pright {
+	background-color: #343434;
+	border-bottom: 15px solid #343434;
+	float: right;
+	height: 50px;
+	width: 50%;
+}
+#repo {
+	background: #e4e4e4;
+	padding: 30px 0px;
 	text-align: center;
 	width: 100%;
 }
-	.repoitem {
-		display: inline-block!important;
-		padding-top: 15px;
-		text-align: left;
-		width: 500px!important;
+	#rtitle {
+		font-size: 26px;
+		font-weight: bold;
 	}
-		@media screen and (max-device-width: 500px) {
-			.repoitem {
-				width: 100%!important;
-			}
+	#repos {
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
+	}
+		.repoitem {
+			display: inline-block!important;
+			padding-top: 15px;
+			text-align: left;
+			width: 500px!important;
 		}
-		.ri-clickable {
-			border: 0px!important;
-			width: calc(100% - 30px)!important;
-		}
-			.ri-c-title {
-				display: block;
-				font-weight: bold;
-				padding-top: 1px;
+			@media screen and (max-device-width: 500px) {
+				.repoitem {
+					width: 100%!important;
+				}
 			}
-			.ri-c-desc {
-				display: block;
-				padding-top: 1px;
+			.ri-clickable {
+				border: 0px!important;
+				width: calc(100% - 30px)!important;
 			}
-			.ri-c-lang {
-				color: #529EFB;
-				display: block;
-				font-style: italic;
-				padding-top: 3px;
-			}
+				.ri-c-title {
+					display: block;
+					font-weight: bold;
+					padding-top: 1px;
+				}
+				.ri-c-desc {
+					display: block;
+					padding-top: 1px;
+				}
+				.ri-c-lang {
+					color: #529EFB;
+					display: block;
+					font-style: italic;
+					padding-top: 3px;
+				}
