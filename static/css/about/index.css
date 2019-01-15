@@ -1,9 +1,119 @@
-#content {
-	background-color: #e4e4e4;
-	min-height: calc(100vh - 101px - 10px - 300px);
+#header {
+	background-image: url('/images/backgrounds/uwbbw.jpg');
+	background-position: 10% 30%;
+	background-size: cover;
+	height: 499px;
 	padding-top: 101px;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 10px;
-	width: 90%;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
 }
+	#title {
+		background-color: rgba(255, 255, 255, 0.8);
+		font-size: 30px;
+		letter-spacing: 5px;
+		margin-top: 176.5px;
+		padding: 5px 15px;
+		text-align: center;
+		vertical-align: middle;
+	}
+.seperator {
+	border-left: calc(50vw) solid transparent;
+	border-bottom: 150px solid #343434;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 450px;
+	width: 0;
+}
+.section {
+	padding: 30px;
+	text-align: center;
+	width: calc(100% - 60px);
+}
+	.sectiontitle {
+		display: block;
+		font-size: 24px;
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+		.sectiontitle.white {
+			color: #e4e4e4;
+		}
+		.sectiontitle.black {
+			color: #343434;
+		}
+#start {
+	background-color: #343434;
+	color: #e4e4e4;
+}
+#me {
+	background-color: #e4e4e4;
+}
+#insta {
+	background-color: #343434;
+}
+#student {
+	background-color: #e4e4e4;
+}
+#coder {
+	background-color: #343434;
+}
+#languages {
+	background-color: #e4e4e4;
+}
+	#l-talk {
+
+	}
+	#l-languages {
+		background-color: white;
+		border: 1px solid #b4b4b4;
+		border-radius: 5px;
+		margin-top: 15px;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding: 1%;
+		width: 94%;
+	}
+		.language {
+
+		}
+			.l-front {
+
+			}
+				.l-f-title {
+
+				}
+				.l-f-bar {
+
+				}
+					.l-f-b-bar {
+
+					}
+			.l-description {
+
+			}
+#target {
+	background-color: #343434;
+}
+#charity {
+	background-color: #e4e4e4;
+}
+#gamer {
+	background-color: #343434;
+}
+#resume {
+	background-color: #e4e4e4;
+	color: #343434;
+}
+		#resume a {
+			border: 1px solid #343434;
+			color: #343434;
+			display: inline-block;
+			margin-top: 10px;
+			padding: 5px 15px;
+			width: fit-content;
+		}
+			#resume a:hover {
+				background-color: rgba(0, 0, 0, .1);
+			}

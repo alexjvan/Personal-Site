@@ -59,11 +59,13 @@ function mobileClicker() {
 
 var prevHeight = 0;
 var topCheck = 70;
+var originalcolor = '';
 
 function dropHeader() {
 	if(isMobile || $(window).width() < 750) {
 
 	} else if(($(window).scrollTop() > topCheck && prevHeight < topCheck)){
+		originalcolor = $('.h-r-d-i-l-text').css('color');
 		$("header").stop().animate({'background-color':'rgba(0,0,0,.6)', 'height':'49px'});
 		$('header').css({'position':'fixed'});
 		$('.h-r-d-i-l-text').stop().animate({'color':'white'});
@@ -72,7 +74,7 @@ function dropHeader() {
 		$('#h-l-ln-l-img').attr('src','/images/logos/logoinverted.gif');
 	} else if($(window).scrollTop() <= topCheck && prevHeight >= topCheck) {
 		$("header").stop().animate({'background-color':'transparent', 'height':'101px', 'position':'absolute'});
-		$('.h-r-d-i-l-text').stop().animate({'color':'black'});
+		$('.h-r-d-i-l-text').stop().animate({'color':originalcolor});
 		$('#h-l-ln-name').stop().animate({'color':'black', 'padding-top':'41px'});
 		$('.h-r-d-i-link').stop().animate({'padding-top':'41px'});
 		$('#h-l-ln-l-img').attr('src','/images/logos/logo.gif');

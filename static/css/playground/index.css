@@ -1,0 +1,34 @@
+#header {
+	background-image: url('/images/backgrounds/riverbw.jpg');
+	background-position: 60% 30%;
+	background-size: cover;
+	height: 499px;
+	padding-top: 101px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+	#title {
+		background-color: rgba(255, 255, 255, 0.6);
+		font-size: 30px;
+		letter-spacing: 5px;
+		margin-top: 176.5px;
+		padding: 5px 15px;
+		text-align: center;
+		vertical-align: middle;
+	}
+.seperator {
+	border-left: calc(50vw) solid transparent;
+	border-bottom: 150px solid #e4e4e4;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 450px;
+	width: 0;
+}
+#projects {
+	background-color: #e4e4e4;
+	margin-bottom: -3px;
+	padding: 15px;
+	width: calc(100% - 30px);
+}
