@@ -46,7 +46,6 @@ app.post('/sendmail/', function(req, res) {
 });
 
 app.get(/dev/, function(req, res) {
-	// NEVER REACHED - WHY?
 	var turl = url.parse(req.url, true);
 	var path = turl.pathname;
 	path = path.substring(1);

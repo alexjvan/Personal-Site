@@ -23,11 +23,15 @@
 				</div>
 				<script>
 					var repos;
+					var colors;
 					$(document).ready(function() {
-						gitRepos();
+						$.getJSON('/files/colors.json', function(data) {
+							colors=data;
+							gitRepos(colors);
+						});
 					});
 
-					function gitRepos() {
+					function gitRepos(colors) {
 						var xhttp = new XMLHttpRequest();
 						xhttp.onreadystatechange = function() {
 							if (this.readyState == 4 && this.status == 200) {
@@ -38,7 +42,7 @@
 									// svn_url
 									// description
 									// language
-									$('#repos').html($('#repos').html() + '<div class="repoitem"><a class="ri-clickable" href="'+current['svn_url']+'"><div class="ri-c-title">'+current['name']+'</div><div class="ri-c-desc">'+current['description']+'</div><div class="ri-c-lang">'+current['language']+'</div></a></div>');
+									$('#repos').html($('#repos').html() + '<div class="repoitem" style="border-color:  '+colors[current['language']]+'"><a class="ri-clickable" href="'+current['svn_url']+'" target="_blank"><div class="ri-c-title">'+current['name']+'</div><div class="ri-c-desc">'+current['description']+'</div><div class="ri-c-lang">'+current['language']+'</div></a></div>');
 								}
 							}
 						};

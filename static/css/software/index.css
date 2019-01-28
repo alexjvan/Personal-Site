@@ -68,6 +68,7 @@
 			margin-right: 2px;
 			padding: 5px;
 			text-align: left;
+			vertical-align: top;
 			width: 483px!important;
 		}
 			@media screen and (max-device-width: 1000px) {
