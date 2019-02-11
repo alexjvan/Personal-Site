@@ -20,6 +20,8 @@ app.get(/api/, function(req, res)  {
 });
 
 app.post('/sendmail/', function(req, res) {
+	console.log('Reaching sendmail');
+	console.log(turl);
 	var obj = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 	let mailOpts, smtpTrans;
 		smtpTrans = nodemailer.createTransport({
@@ -46,6 +48,8 @@ app.post('/sendmail/', function(req, res) {
 });
 
 app.get(/dev/, function(req, res) {
+	console.log('Reaching dev');
+	console.log(turl);
 	var turl = url.parse(req.url, true);
 	var path = turl.pathname;
 	path = path.substring(1);
@@ -57,6 +61,8 @@ app.get(/dev/, function(req, res) {
 });
 
 app.get('*', function(req, res)  {
+	console.log('Reaching regular');
+	console.log(turl);
 	var turl = url.parse(req.url, true);
 	var path = 'current' + turl.pathname;
 
