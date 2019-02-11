@@ -39,9 +39,9 @@ app.post('/sendmail/', function(req, res) {
 	};
 	smtpTrans.sendMail(mailOpts, function (error, response) {
 		if(error)
-			res.redirect('/dev/contact/index.ejs?error=true&errormessage='+error+'&name='+req.body.name+'&subject='+req.body.subject+'&email='+req.body.email+'&message='+req.body.message);
+			res.redirect('/contact/index.ejs?error=true&errormessage='+error+'&name='+req.body.name+'&subject='+req.body.subject+'&email='+req.body.email+'&message='+req.body.message);
 		else
-			res.redirect('/dev/contact/index.ejs?error=false');
+			res.redirect('/contact/index.ejs?error=false');
 	});
 });
 
